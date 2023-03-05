@@ -1,3 +1,5 @@
 node_modules
+__mocks__
 commitlint.config.ts
 jest.config.ts
+vite.config.ts
