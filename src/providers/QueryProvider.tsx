@@ -7,7 +7,6 @@ interface IQueryProviderProps {
   children: ReactNode
 }
 
-console.log('### queryClient ', queryClient)
 const QueryProvider: FC<IQueryProviderProps> = ({ children }) => {
   return (
     <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
