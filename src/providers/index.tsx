@@ -1,7 +1,7 @@
 import { FC, ReactNode } from 'react'
-import CssBaseline from '@mui/material/CssBaseline'
 
-import QueryProvider from '@/providers/QueryProvider'
+import Query from '@/providers/Query'
+import Theme from '@/providers/Theme'
 
 interface IProvidersProps {
   children: ReactNode
@@ -9,9 +9,9 @@ interface IProvidersProps {
 
 const Providers: FC<IProvidersProps> = ({ children }) => {
   return (
-    <CssBaseline enableColorScheme>
-      <QueryProvider>{children}</QueryProvider>
-    </CssBaseline>
+    <Query>
+      <Theme>{children}</Theme>
+    </Query>
   )
 }
 

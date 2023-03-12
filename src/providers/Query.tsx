@@ -7,10 +7,10 @@ interface IQueryProviderProps {
   children: ReactNode
 }
 
-const QueryProvider: FC<IQueryProviderProps> = ({ children }) => {
+const Query: FC<IQueryProviderProps> = ({ children }) => {
   return (
     <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
   )
 }
 
-export default QueryProvider
+export default Query

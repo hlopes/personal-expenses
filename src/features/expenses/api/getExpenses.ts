@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query'
 
 import { supabase } from '@/lib/supabase'
-import { IExpense } from '@/features/types'
+import { IExpense } from '@/features/expenses/types'
 
 const getExpenses = async (): Promise<IExpense[]> => {
   const { data } = await supabase.from('expenses').select()
